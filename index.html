@@ -207,7 +207,7 @@
                 it checks if the plant is currently being watered. If it is being watered and the soil moisture is at 
                 or equal to the selected value, it turns the water off. If it’s not being watered and the soil 
                 moisture is below the selected value, it turns the water on. We do this instead of a while measured 
-                moisture < desired moisture loop because it allows us to still respond to button presses. If we’re 
+                moisture &lt; desired moisture loop because it allows us to still respond to button presses. If we’re 
                 in interval mode and on the homescreen, the GUI will check if the plant is currently being watered. 
                 If it is, it checks if the current time is greater than or equal to the watering start time plus how 
                 long the water needs to run, and turns the water off if this is true. If it isn’t being watered, the 
@@ -229,7 +229,7 @@
       <div style="text-align:center;">
               <h2>Drawings</h2>
               <p style="text-align: left;padding: 0px 30px;">
-                Diagram 1 shows a high level overview of all of the hardware components of our project. The 
+                Drawing 1 shows a high level overview of all of the hardware components of our project. The 
                 diagram comprises the RPi/piTFT, which are placed one on top of the other and connected to the 
                 main breadboard with the Pi Cobbler (labeled extender). This connector allows other peripherals 
                 to link to pins that the piTFT does not use. A camera is connected to the RPi directly through a 
@@ -238,15 +238,15 @@
                 and an external power supply of 12V. One end of the water pump is connected to the reservoir (input) 
                 and the other to the plant (output). The last thing is the plant monitor sensor. This sensor is 
                 connected to the positive(+) and negative/ground (-) sides of the breadboard, and RX and TX pins 
-                on the RPi. Diagrams 2, 3, and 4 give a more in-depth view of the individual component hookups.<br>
+                on the RPi. Drawings 2, 3, and 4 give a more in-depth view of the individual component hookups.<br>
               </p>
               <img class="img-rounded" src="pics/diagram.png" alt="High Level Overview" width="600" height="334"><br>
-              <h4><i>Diagram 1: High Level Overview</i></h4><br>
+              <h4><i>Drawing 1: High Level Overview</i></h4><br>
               <img class="img-rounded" src="pics/Plant_Monitor.png" alt="Plant Monitor" width="200" height="99">
               <img class="img-rounded" src="pics/Sunlight.png" alt="Light" width="200" height="118"><br>
-              <h4><i>Diagrams 2 and 3: Plant Monitor and Light Sensor Schematics</i></h4><br>
+              <h4><i>Drawings 2 and 3: Plant Monitor and Light Sensor Schematics</i></h4><br>
               <img class="img-rounded" src="pics/Water_Pump.png" alt="Water Pump" width="475" height="151">
-              <h4><i>Diagram 4: Water Pump Schematic</i></h4>
+              <h4><i>Drawing 4: Water Pump Schematic</i></h4>
       </div>
 
     <hr id='testing'>
@@ -364,11 +364,11 @@
           <h3>Ashley Heckman</h3>
           <p class="lead">agh93@cornell.edu</p>
           <div style="text-align:left;">
-              <p><ul>
+              <ul>
                 <li>Designed and implemented the GUI</li>
                 <li>Established control for all watering modes</li>
                 <li>Created the website</li>
-              </ul></p>
+              </ul>
           </div>
       </div>
       <div class="col-md-6" style="font-size:16px">
@@ -376,11 +376,11 @@
           <h3>Maria Boza</h3>
           <p class="lead">mib57@cornell.edu</p>
           <div style="text-align:left;">
-            <p><ul>
+            <ul>
               <li>Worked on the integration of the sensors and camera</li>
               <li>Created the website</li>
               <li>Kept Martha the Marigold alive!</li>
-            </ul></p><br>
+            </ul><br>
           </div>
       </div>
 
@@ -399,10 +399,10 @@
               <li><a href="https://www.sparkfun.com/products/14450?gclid=CjwKCAjwjYKjBhB5EiwAiFdSfvRoyG6ijmqvYEtTYypJcXAlf6zWuqesGogWwqSt9_0Y5jCDCf2qjRoCnHYQAvD_BwE">Motor Driver - $13.95</a></li>
               <li><a href="https://www.homedepot.com/p/UDP-5-16-in-I-D-x-7-16-in-O-D-x-20-ft-Clear-Vinyl-Tubing-T10007006/304185172?source=shoppingads&locale=en-US&pla&mtc=SHOPPING-BF-CDP-GGL-D26P-026_001_PIPE_FITTING-NA-NA-NA-PMAX-NA-NA-NA-NA-NBR-NA-NA-NEW-PMax&cm_mmc=SHOPPING-BF-CDP-GGL-D26P-026_001_PIPE_FITTING-NA-NA-NA-PMAX-NA-NA-NA-NA-NBR-NA-NA-NEW-PMax-71700000097492030--&gclid=CjwKCAjwjYKjBhB5EiwAiFdSfsFWivbbED-q2Zoq-Q8uqPqv1-AriHuaz-cVXIhXtUYS2S4SR7O1PxoCU28QAvD_BwE&gclsrc=aw.ds">Tubing - $9.86</a></li>
               <li><a href="https://www.homedepot.com/p/Everbilt-5-16-5-8-in-Stainless-Steel-Hose-Clamp-6260294/202309384?source=shoppingads&locale=en-US&&mtc=SHOPPING-BF-CDP-GGL-D26P-026_006_IRRIGATION-NA-NA-NA-SMART-NA-NA-NA-NA-NBR-NA-NA-NEW-NA&cm_mmc=SHOPPING-BF-CDP-GGL-D26P-026_006_IRRIGATION-NA-NA-NA-SMART-NA-NA-NA-NA-NBR-NA-NA-NEW-NA-71700000081569464-58700006932068301-92700062338492241&gclid=CjwKCAjwjYKjBhB5EiwAiFdSfrd-1ZfWNqIMMEF9Hdy7JRENGof48v5d6ONMTfd9qxojOXsysRUCFBoCbngQAvD_BwE&gclsrc=aw.ds">Tube Clamps (2) - $3.76</a></li>
-              <li>3D Printed Pot - $2</li></a>
-              <li>3D Printed Reservoir - $2</li></a>
-              <li>Soil - $1</li></a>
-              <li>Seeds - $1</li></a>
+              <li>3D Printed Pot - $2</li>
+              <li>3D Printed Reservoir - $2</li>
+              <li>Soil - $1</li>
+              <li>Seeds - $1</li>
               <li>Breadboard, Wires, Resistors, and Phototransistors - Provided in lab</li>
           </ul>
           <h3>Total: $155.66</h3>
@@ -411,17 +411,19 @@
       <div style="font-size:18px">
         <div style="text-align: left;">
           <h2>References</h2>
-          <li><a href="https://picamera.readthedocs.io/">PiCamera Document</a></li>
-          <li><a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera">Getting Started with PiCamera</a></li>
-          <li><a href="https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/?fbclid=IwAR2VapDATNAdWZw4prG8uiNBKwqL0IXu7jidJOO81o0FDb9PHFSmfcW6Odc">PiCamera Web Stream Tutorial</a></li>
-          <li><a href="https://cdn-shop.adafruit.com/product-files/5587/instructions_pmon_all.pdf">Plant Monitor Instructions</a></li>
-          <li><a href="https://github.com/monkmakes/pmon">Plant Monitor Code</a></li>
-          <li><a href="https://www.acurite.com/blog/soil-moisture-guide-for-plants-and-vegetables.html">Recommended Moisture Levels</a></li>
-          <li><a href="https://learn.adafruit.com/basic-resistor-sensor-reading-on-raspberry-pi/overview">Light Sensor Tutorial 1</a></li>
-          <li><a href="https://pimylifeup.com/raspberry-pi-light-sensor/">Light Sensor Tutorial 2</a></li>
-          <li><a href="https://skovira.ece.cornell.edu/ece5725/">ECE 5725 Website</a></li>
-          <li><a href="https://www.instructables.com/">Instructables</a></li>
-          <li>ECE 5725 Lab 3 Handout</li>
+          <ul>
+            <li><a href="https://picamera.readthedocs.io/">PiCamera Document</a></li>
+            <li><a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera">Getting Started with PiCamera</a></li>
+            <li><a href="https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/?fbclid=IwAR2VapDATNAdWZw4prG8uiNBKwqL0IXu7jidJOO81o0FDb9PHFSmfcW6Odc">PiCamera Web Stream Tutorial</a></li>
+            <li><a href="https://cdn-shop.adafruit.com/product-files/5587/instructions_pmon_all.pdf">Plant Monitor Instructions</a></li>
+            <li><a href="https://github.com/monkmakes/pmon">Plant Monitor Code</a></li>
+            <li><a href="https://www.acurite.com/blog/soil-moisture-guide-for-plants-and-vegetables.html">Recommended Moisture Levels</a></li>
+            <li><a href="https://learn.adafruit.com/basic-resistor-sensor-reading-on-raspberry-pi/overview">Light Sensor Tutorial 1</a></li>
+            <li><a href="https://pimylifeup.com/raspberry-pi-light-sensor/">Light Sensor Tutorial 2</a></li>
+            <li><a href="https://skovira.ece.cornell.edu/ece5725/">ECE 5725 Website</a></li>
+            <li><a href="https://www.instructables.com/">Instructables</a></li>
+            <li>ECE 5725 Lab 3 Handout</li>
+          </ul>
       </div>
 
     <hr>
@@ -2476,6 +2478,10 @@
 
               
       </div>
+    </div>
+      </div>
+    </div>
+  </div>
 
     </div><!-- /.container -->
 
